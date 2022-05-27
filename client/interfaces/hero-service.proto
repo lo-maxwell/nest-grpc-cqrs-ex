@@ -14,12 +14,8 @@ service HeroService {
     rpc CreamCheese (GetHeroRequest) returns (GetHeroResponse) {
     }
 
-    rpc HelloWorld (google.protobuf.Empty) returns (Hello) {
-    }
 }
 
-message Hello {
-}
 
 message ListHeroResponse {
     repeated Hero heros = 1;

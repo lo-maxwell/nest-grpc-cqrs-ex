@@ -19,7 +19,3 @@ export interface GetHeroResponse {
 export interface ListHeroResponse {
     heros: Hero[];
 }
-
-export interface helloWorld {
-
-}

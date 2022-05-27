@@ -14,12 +14,6 @@ service HeroService {
     rpc CreamCheese (GetHeroRequest) returns (GetHeroResponse) {
     }
 
-    rpc helloWorld (google.protobuf.Empty) returns (hello) {
-    }
-}
-
-message hello {
-  string repsonse = 1;
 }
 
 message ListHeroResponse {

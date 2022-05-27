@@ -20,10 +20,6 @@ export interface ListHeroResponse {
     heros: Hero[];
 }
 
-export interface helloWorld {
-  
-}
-
 export interface updateHero {
   id: number;
 }

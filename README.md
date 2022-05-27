@@ -33,6 +33,7 @@ A NodeJS micro-service solution based on Consul, writing by Typescript language 
 
 ```bash
 yarn
+consul agent -server -bootstrap -ui -join 127.0.0.1 --data-dir /tmp
 yarn run start:server1
 yarn run start:server2
 yarn run start:client

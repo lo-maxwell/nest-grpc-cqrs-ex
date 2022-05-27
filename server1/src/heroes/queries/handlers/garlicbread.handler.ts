@@ -13,7 +13,6 @@ export class GarlicBreadHandler implements IQueryHandler<GarlicBreadQuery> {
   async execute(query: GarlicBreadQuery) {
     console.log(clc.yellowBright('Async GarlicBreadQuery...!'));
     let data = this.heros;
-    console.log(data);
     return data;
   }
 }
