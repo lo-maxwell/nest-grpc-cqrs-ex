@@ -10,6 +10,15 @@ service HeroService {
 
     rpc List (google.protobuf.Empty) returns (ListHeroResponse) {
     }
+
+    rpc CreamCheese (GetHeroRequest) returns (GetHeroResponse) {
+    }
+
+    rpc HelloWorld (google.protobuf.Empty) returns (Hello) {
+    }
+}
+
+message Hello {
 }
 
 message ListHeroResponse {
@@ -20,6 +29,10 @@ message GetHeroRequest {
     int32 id = 1;
 }
 
+message GetSchoolRanking {
+    int32 ranking = 1;
+}
+
 message GetHeroResponse {
     Hero hero = 1;
 }
@@ -27,4 +40,5 @@ message GetHeroResponse {
 message Hero {
     int32 id = 1;
     string name = 2;
+    int32 ranking = 3;
 }

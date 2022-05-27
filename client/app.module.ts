@@ -8,6 +8,7 @@ import { TerminusModule } from '@nestjs/terminus';
 import { HeroController } from './hero.controller';
 import { resolve } from 'path';
 import { GrpcModule } from '@nestcloud/grpc';
+import { CqrsModule } from '@nestjs/cqrs';
 
 @Module({
     imports: [
@@ -19,6 +20,7 @@ import { GrpcModule } from '@nestcloud/grpc';
         TerminusModule.forRootAsync({
             useFactory: () => ({ endpoints: [{ url: '/health', healthIndicators: [] }] }),
         }),
+        CqrsModule
     ],
     controllers: [HeroController],
 })
